@@ -19,9 +19,10 @@ if __name__ == "__main__":
 
     # whole data
     to_be_json = dict()
+    to_be_json.update(**fb_data)
     to_be_json.update(**kb_data)
     to_be_json.update(**koribor_data)
-    to_be_json.update(**fb_data)
+
 
     # save it to JSON
     with open('./asset/macro.json', 'w') as file:
